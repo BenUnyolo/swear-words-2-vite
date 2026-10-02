@@ -2,7 +2,7 @@ import { useState } from "react";
 import { words } from "./lib/words";
 
 function App() {
-  const [randomIndex, setRandomIndex] = useState(
+  const [randomIndex, setRandomIndex] = useState(() =>
     Math.floor(Math.random() * words.length)
   );
 
